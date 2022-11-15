@@ -1,7 +1,6 @@
 package main
 
 import (
-	"io/ioutil"
 	"os"
 	"strconv"
 	"strings"
@@ -9,8 +8,7 @@ import (
 )
 
 func level2(filename string, wg *sync.WaitGroup) {
-	in, err := ioutil.ReadFile(filename + ".in")
-
+	in, err := os.ReadFile(filename + ".in")
 	if err != nil {
 		panic(err)
 	}
@@ -18,7 +16,6 @@ func level2(filename string, wg *sync.WaitGroup) {
 	input := strings.Fields(string(in))
 
 	vals := make([]int, len(input[1:]))
-
 	for i, v := range input[1:] {
 		vals[i], _ = strconv.Atoi(v)
 	}
@@ -56,6 +53,6 @@ func level2(filename string, wg *sync.WaitGroup) {
 		}
 	}
 
-	ioutil.WriteFile(filename+".out", []byte(strconv.Itoa(int(positions[index]))+" "+strconv.Itoa(int(lens[index]))), os.ModePerm)
+	os.WriteFile(filename+".out", []byte(strconv.Itoa(int(positions[index]))+" "+strconv.Itoa(int(lens[index]))), os.ModePerm)
 	wg.Done()
 }

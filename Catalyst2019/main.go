@@ -12,29 +12,25 @@ var filenames4 = []string{"level4/level4_1", "level4/level4_2", "level4/level4_3
 func main() {
 	var wg sync.WaitGroup
 
-	run(&wg)
-
-	wg.Wait()
-}
-
-func run(wg *sync.WaitGroup) {
 	for _, v := range filenames1 {
 		wg.Add(1)
-		go level1(v, wg)
+		go level1(v, &wg)
 	}
 
 	for _, v := range filenames2 {
 		wg.Add(1)
-		go level2(v, wg)
+		go level2(v, &wg)
 	}
 
 	for _, v := range filenames3 {
 		wg.Add(1)
-		go level3(v, wg)
+		go level3(v, &wg)
 	}
 
 	for _, v := range filenames4 {
 		wg.Add(1)
-		go level4(v, wg)
+		go level4(v, &wg)
 	}
+
+	wg.Wait()
 }
