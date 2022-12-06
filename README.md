@@ -2,7 +2,7 @@
 > My solutions to coding contests and CTFs I have participated in
 
 ## License
-CodingContests - My solutions to coding contest I have participated in<br>
+CodingContests - My solutions to coding contests and CTFs I have participated in<br>
 Copyright (C) 2022 Elias*
 
 This program is free software: you can redistribute it and/or modify
