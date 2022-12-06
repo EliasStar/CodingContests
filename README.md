@@ -1,5 +1,5 @@
 # Coding Contests
-> My solutions to coding contest I have participated in
+> My solutions to coding contests and CTFs I have participated in
 
 ## License
 CodingContests - My solutions to coding contest I have participated in<br>
