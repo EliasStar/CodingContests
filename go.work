@@ -3,4 +3,5 @@ go 1.19
 use (
 	./Catalyst2019
 	./Cloudflight2022
+	./HitconCTF2022/RCE
 )
