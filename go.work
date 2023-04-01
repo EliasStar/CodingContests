@@ -3,5 +3,6 @@ go 1.19
 use (
 	./Catalyst2019
 	./Cloudflight2022
+	./Cloudflight2023
 	./HitconCTF2022/RCE
 )
