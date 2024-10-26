@@ -6,5 +6,6 @@ use (
 	./Cloudflight_2023-03
 	./Cloudflight_2023-10
 	./Cloudflight_2024-04
+    ./Cloudflight_2024-10
 	./HitconCTF_2022/RCE
 )
